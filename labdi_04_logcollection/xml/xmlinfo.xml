@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<log>
+	<package>cn.xysfxy.di_04_01.lab.factory</package>
+	<factory>ConsoleLogFactory</factory>
+</log>

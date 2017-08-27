@@ -1,0 +1,36 @@
+sql执行步骤
+1.加载mysql驱动
+	Class.forName("com.mysql.jdbc.Driver");
+2.建立连接
+	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/[databaseName]", "[username]", "[password]");
+3.编写sql语句
+	String sql = "XXX";
+4.建立Statement对象
+	Statement stm = con.createStatement();
+5.执行Statement()对象
+	stm.executeUpdate(sql);
+6.关闭连接
+	close();
+
+并发处理sql步骤
+1.加载mysql驱动
+	Class.forName("com.mysql.jdbc.Driver");
+2.建立链接
+	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/[databaseName]", "[username], [password]");
+3.关闭自动提交事务
+	con.setAutoCommit(false);
+4.编写sql语句
+	String sql = "XXX";
+5.建立PerparedStatement对象
+	PerparedStatement pstmt = con.PerparedStatment(sql);
+6.将sql语句中的占位符使用属性代替
+	pstmt.setXXX(XXX_attribute);
+	e.g.
+		pstmt.setString(username);
+7.执行PerparedStatement对象
+	pstmt.executeUpdate();	//无参的
+	pstmt.executeQuery();
+8.提交事务
+	con.commit();
+9.关闭连接
+	close();

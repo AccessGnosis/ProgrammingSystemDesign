@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+	<package>cn.xysfxy.di_05.lab.factory</package>
+	<builder>DesktopComputerBuilderFactory</builder>
+</config>

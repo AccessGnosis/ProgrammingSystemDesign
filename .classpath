@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="di_01_connectMySQLDatabase"/>
+	<classpathentry kind="src" path="labdi_01"/>
+	<classpathentry kind="src" path="di_02_concurrenceMySQLExecute"/>
+	<classpathentry kind="src" path="database"/>
+	<classpathentry kind="src" path="labdi_02"/>
+	<classpathentry kind="src" path="task_01_preparedstatement"/>
+	<classpathentry kind="src" path="labdi_03_simplefactorymode"/>
+	<classpathentry kind="src" path="di_03_SQLFactoryExample"/>
+	<classpathentry kind="src" path="labdi_04_logcollection"/>
+	<classpathentry kind="src" path="labdi_04_02_produce_computer_p103t2"/>
+	<classpathentry kind="src" path="labdi_05_builder"/>
+	<classpathentry kind="src" path="task_02_singlepattern"/>
+	<classpathentry kind="src" path="labdi_06_prototypepattern"/>
+	<classpathentry kind="src" path="labdi_06_starvingandlazy"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.41-bin.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

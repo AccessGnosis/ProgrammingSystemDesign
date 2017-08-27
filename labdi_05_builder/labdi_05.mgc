@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class
+        name="cn.xysfxy.di_05.lab.factory.DesktopComputerBuilderFactory"
+        x="168" y="497">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="cn.xysfxy.di_05.lab.factory.ComputerBuilderFactory"/>
+    </Class>
+    <Class
+        name="cn.xysfxy.di_05.lab.factory.NotebookComputerBuilderFactory"
+        x="315" y="426">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="cn.xysfxy.di_05.lab.factory.ComputerBuilderFactory"/>
+    </Class>
+    <Class name="cn.xysfxy.di_05.lab.worker.Worker" x="8" y="117">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="cn.xysfxy.di_05.lab.builder.ComputerBuilder"
+            endpointName="combuilder" kind="Simple"/>
+        <Communication destinationClassName="cn.xysfxy.di_05.lab.builder.ComputerBuilder"/>
+    </Class>
+    <Class name="cn.xysfxy.di_05.lab.factory.ComputerBuilderFactory"
+        x="170" y="328">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="cn.xysfxy.di_05.lab.builder.DesktopComputer" x="346" y="232">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="cn.xysfxy.di_05.lab.builder.ComputerBuilder"/>
+        <Communication destinationClassName="cn.xysfxy.di_05.lab.production.Computer"/>
+    </Class>
+    <Class name="cn.xysfxy.di_05.lab.builder.NotebookComputer" x="217" y="233">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="cn.xysfxy.di_05.lab.builder.ComputerBuilder"/>
+        <Communication destinationClassName="cn.xysfxy.di_05.lab.production.Computer"/>
+    </Class>
+    <Class name="cn.xysfxy.di_05.lab.production.Computer" x="236" y="6">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="cn.xysfxy.di_05.lab.util.xml.XMLUtil" x="72" y="63">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="cn.xysfxy.di_05.lab.builder.ComputerBuilder" x="213" y="99">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="cn.xysfxy.di_05.lab.production.Computer"
+            endpointName="computer" kind="Simple"/>
+    </Class>
+    <Class
+        name="cn.xysfxy.di_05.lab.factory.ServerComputerBuilderFactory"
+        x="12" y="424">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="cn.xysfxy.di_05.lab.factory.ComputerBuilderFactory"/>
+    </Class>
+    <Class name="cn.xysfxy.di_05.lab.ui.MainClass" x="64" y="17">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="cn.xysfxy.di_05.lab.worker.Worker"/>
+        <Communication destinationClassName="cn.xysfxy.di_05.lab.factory.ComputerBuilderFactory"/>
+        <Communication destinationClassName="cn.xysfxy.di_05.lab.util.xml.XMLUtil"/>
+    </Class>
+    <Class name="cn.xysfxy.di_05.lab.builder.ServerComputer" x="84" y="232">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="cn.xysfxy.di_05.lab.builder.ComputerBuilder"/>
+        <Communication destinationClassName="cn.xysfxy.di_05.lab.production.Computer"/>
+    </Class>
+</ClassDiagram>
